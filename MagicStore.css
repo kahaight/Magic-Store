@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+header {
+position: top;
+background-color: black;
+font-family: Arial, Helvetica, sans-serif;
+color: white;
+margin: 0;
+}
+
+header p {
+    margin: 0;
+}
+
+header h1{
+    padding: 0;
+    margin: 0;
+}
+
+.bundle img {
+    height: 311px;
+    width: 223px;
+}
+
+.bundle{
+    float: left;
+}
+
+
+#bundles1 {
+    width: 669px;
+    position: relative;
+    top: 0;
+    margin: 0 auto 0 auto;
+    height: 800px;
+}
+#bundles2 {
+    width: 669px;
+    position: relative;
+    top: 0;
+    margin: 0 auto 0 auto;
+}
+
+.buttons{
+    position: relative;
+    bottom: 0;
+}
+
+select {
+    float: right;
+    position: relative;
+    top: 0;
+    display: inline;
+}
+
+#bundles1 header h2 {
+    margin: 0;
+    border: 0;
+}
+
+#bundles2 header h2 {
+    margin: 0;
+    border: 0;
+}
+
+button {
+    float: right;
+}
+
+section {
+    text-align: center;
+}
