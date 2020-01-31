@@ -8,77 +8,23 @@
     <link rel="stylesheet" href="MagicStore.css">
 </head>
 <body>
-    <header>
+    <header id = "pageheader">
         <h1>Standard Magic Card Bundle Store</h1>
         <nav>
-
+            <a class="headerlink" href="" style="color: white" target = "blank">About Us</a>
+            <a class="headerlink" href="" style="color: white" target = "blank">Contact</a>
+            <a class="headerlink" href="https://gatherer.wizards.com/Pages/Default.aspx" style="color: white" target = "blank">Gatherer</a>
         </nav>
-        <p>Select an edition and our proprietary software will calculate the bundle price based on the average card value in that edition. </p>
     </header>
     <section>
-    <div id = bundles1>
-        <header><h2>Bundles by Type</h2>
-            <select>
-                <option value="all">All Sets</option>
-                <option value="throne">Throne of Eldrain</option>
-                <option value="coreSet20">Core Set 2020</option>
-                <option value="warSpark">War of the Spark</option>
-                <option value="theros">Theros Beyond Death</option>
-                <option value="ravnica">Ravnica Allegiance</option>
-                <option value="guilds">Guilds of Ravnica</option>
-              </select></header>
-        <div class = bundle>
-            <h3>Sorcery</h3>
-            <img src="../MyStore/MagicAssets/sorcery.jpg">
-            <div class = buttons>
-                <span>Price</span>
-                <button>ORDER</button>
-                </div>
+       
+        <div id = "storeDescription"> <p>Looking for a specific enchantment but can't afford to buy it outright? Select an edition and our proprietary software will calculate the bundle price based on the average card value of all the cards of that type in that edition. </p>
+        <p>15 Cards to a bundle</p>
         </div>
-        <div class = bundle>
-            <h3>Instants</h3>
-            <img src="../MyStore/MagicAssets/instant.jpg">
-            <div class = buttons>
-                <span>Price</span>
-                <button>ORDER</button>
-                </div>
-        </div>
-        <div class = bundle>
-            <h3>Enchantments</h3>
-            <img src="../MyStore/MagicAssets/enchantment.jpg">
-            <div class = buttons>
-                <span>Price</span>
-                <button>ORDER</button>
-                </div>
-        </div>
-        <div class = bundle>
-            <h3>Creatures</h3>
-            <img src="../MyStore/MagicAssets/creature.jpg">
-            <div class = buttons>
-                <span>Price</span>
-                <button>ORDER</button>
-                </div>
-        </div>
-        <div class = bundle>
-            <h3>Artifacts</h3>
-            <img src="../MyStore/MagicAssets/artifact.jpg">
-            <div class = buttons>
-                <span>Price</span>
-                <button>ORDER</button>
-                </div>
-        </div>
-        <div class = bundle>
-            <h3>Planeswalkers</h3>
-            <img src="../MyStore/MagicAssets/planeswalker.jpg">
-            <div class = buttons>
-            <span>Price</span>
-            <button>ORDER</button>
-            </div>
-        </div>
-    </div>
-    <div id = bundles2>
-        <header><h2>Bundles by Color</h2>
-            <select>
+        <div id = bundles1>
+            <header class = "bundleheader"><h2>Bundles by Type</h2>
+            <div class="custom-select">
+                <select>
                 <option value="all">All Sets</option>
                 <option value="throne">Throne of Eldrain</option>
                 <option value="coreSet20">Core Set 2020</option>
@@ -87,59 +33,126 @@
                 <option value="ravnica">Ravnica Allegiance</option>
                 <option value="guilds">Guilds of Ravnica</option>
               </select>
+            </div>
+            </header>
+        <div class = bundle>
+            <h3>Sorcery</h3>
+            <img src="../MyStore/MagicAssets/sorcery.jpg">
+            <div class = buttons>
+                <span>Price:</span>
+                <button class = "button">ORDER</button>
+                </div>
+        </div>
+        <div class = bundle>
+            <h3>Instants</h3>
+            <img src="../MyStore/MagicAssets/instant.jpg">
+            <div class = buttons>
+                <span>Price:</span>
+                <button class = "button">ORDER</button>
+                </div>
+        </div>
+        <div class = bundle>
+            <h3>Enchantments</h3>
+            <img src="../MyStore/MagicAssets/enchantment.jpg">
+            <div class = buttons>
+                <span>Price:</span>
+                <button class = "button">ORDER</button>
+                </div>
+        </div>
+        <div class = bundle>
+            <h3>Creatures</h3>
+            <img src="../MyStore/MagicAssets/creature.jpg">
+            <div class = buttons>
+                <span>Price:</span>
+                <button class = "button">ORDER</button>
+                </div>
+        </div>
+        <div class = bundle>
+            <h3>Artifacts</h3>
+            <img src="../MyStore/MagicAssets/artifact.jpg">
+            <div class = buttons>
+                <span>Price:</span>
+                <button class = "button">ORDER</button>
+                </div>
+        </div>
+        <div class = bundle>
+            <h3>Planeswalkers</h3>
+            <img src="../MyStore/MagicAssets/planeswalker.jpg">
+            <div class = buttons>
+            <span>Price:</span>
+            <button class = "button">ORDER</button>
+            </div>
+        </div>
+    </div>
+    <div id = bundles2>
+        <header class = "bundleheader"><h2>Bundles by Color</h2>
+            <div class="custom-select">
+                <select>
+                <option value="all">All Sets</option>
+                <option value="throne">Throne of Eldrain</option>
+                <option value="coreSet20">Core Set 2020</option>
+                <option value="warSpark">War of the Spark</option>
+                <option value="theros">Theros Beyond Death</option>
+                <option value="ravnica">Ravnica Allegiance</option>
+                <option value="guilds">Guilds of Ravnica</option>
+              </select>
+            </div>
         </header>
         <div class = bundle>
             <h3>Blue</h3>
             <img src="../MyStore/MagicAssets/blue.jpg">
             <div class = buttons>
-                <span>Price</span>
-                <button>ORDER</button>
+                <span>Price:</span>
+                <button class = "button">ORDER</button>
                 </div>
         </div>
         <div class = bundle>
             <h3>Black</h3>
             <img src="../MyStore/MagicAssets/black.jpg">
             <div class = buttons>
-                <span>Price</span>
-                <button>ORDER</button>
+                <span>Price:</span>
+                <button class = "button">ORDER</button>
                 </div>
         </div>
         <div class = bundle>
             <h3>Red</h3>
             <img src="../MyStore/MagicAssets/red.jpg">
             <div class = buttons>
-                <span>Price</span>
-                <button>ORDER</button>
+                <span>Price:</span>
+                <button class = "button">ORDER</button>
                 </div>
         </div>
         <div class = bundle>
             <h3>Green</h3>
             <img src="../MyStore/MagicAssets/green.jpg">
             <div class = buttons>
-                <span>Price</span>
-                <button>ORDER</button>
+                <span>Price:</span>
+                <button class = "button">ORDER</button>
                 </div>
         </div>
         <div class = bundle>
             <h3>White</h3>
             <img src="../MyStore/MagicAssets/white.jpg">
             <div class = buttons>
-                <span>Price</span>
-                <button>ORDER</button>
+                <span>Price:</span>
+                <button class = "button">ORDER</button>
                 </div>
         </div>
         <div class = bundle>
             <h3>Lands</h3>
             <img src="../MyStore/MagicAssets/land.jpg">
             <div class = buttons>
-                <span>Price</span>
-                <button>ORDER</button>
+                <span>Price:</span>
+                <button class = "button">ORDER</button>
                 </div>
         </div>
     </div>
     </section>
+    <div class="clear"></div>
     <footer>
+        <!--<video id = "myVideo" autoplay="autoplay" muted="muted" loop="loop" poster="https://media.wizards.com/2019/images/magic/thb/product/CwHwIl7kKH.jpg" style="width: auto; height: 100%;"><source type="video/mp4" src="https://media.wizards.com/2019/images/magic/thb/product/CwHwIl7kKH.mp4"><img src="https://media.wizards.com/2019/images/magic/thb/product/CwHwIl7kKH.jpg" alt=""> -->
 
+        </video>
     </footer>
 </body>
 </html>
