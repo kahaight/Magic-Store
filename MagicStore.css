@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    width: 100%;
+    width: 100vw;
     height: auto;
     background-color: rgba(148, 144, 133, 0.884);
 }
@@ -12,7 +12,7 @@ background-color: black;
 font-family: Arial, Helvetica, sans-serif;
 color: white;
 margin: 0;
-height: 5em;
+height: 6em;
 padding: 0 0 0 0;
 position:fixed;
 top: 0;
@@ -22,9 +22,9 @@ z-index: 1;
 
 #storeDescription {
     height: 5em;
-    width: 1100px;
+    width: 1525px;
     padding: 5px;
-    margin: 5em auto 0 auto;
+    margin: 6em auto 0 auto;
     z-index: -1;
 
 }
@@ -32,21 +32,22 @@ z-index: 1;
 #storeDescription p {
     margin: 0;
     text-align: left;
-    font-size: 1.25em;
+    font-size: 1.75em;
 }
 
 #pageheader h1{
     padding: 0 0 0 0;
-    margin: 0 0 0 0;
-    font-size: 3em;
+    margin: .25em auto 0 auto;
+    font-size: 2.55em;
     position: relative;
     bottom: 0;
+    text-align: center;
 
 }
 
 .bundle img {
-    height: 223px;
-    width: 160px;
+    height: 320px;
+    width: 230px;
     max-width: 100%;
 }
 
@@ -72,18 +73,16 @@ z-index: 1;
 }
 
 #bundles1 {
-    width: 545px;
-    position: relative;
+    width: 750px;
+
     float: left;
-    margin:10px;
-    max-width: 100%;
+    margin:10px 10px 10px auto;
 }
 #bundles2 {
-    width: 545px;
-    position: relative;
-    float: right;
-    margin: 10px;
-    max-width: 100%;
+    width: 750px;
+
+    float: left;
+    margin: 10px auto 10px 10px;
 }
 
 .buttons{
@@ -119,8 +118,10 @@ section {
     position: relative;
     z-index: 0;
     text-align: center;
-    width: 1140px;
+    width: 1525px;
     margin: 0 auto 0 auto;
+    overflow: auto;
+
 
 }
 
@@ -161,7 +162,7 @@ div.clear {
     position: absolute;
     content: "";
     border: 8px solid transparent;
-    border-color: lightgray darkslategray lightgray darkslategray;
+    border-color: lightgray  lightgray darkslategray darkslategray;
     right: 0;
     top: 0;
     color: rgba(141, 12, 12, 0.842);
@@ -181,3 +182,90 @@ div.clear {
 
   .pointer {cursor: pointer;}
 
+  nav {
+      float: right;
+      margin: .75em 0 0 0;
+  }
+
+
+@media only screen and (max-width: 975px) {
+    /* For snapped to half screen */
+
+    #bundles1{
+        margin: 10px auto 10px auto;
+    }
+    #bundles2{
+        margin: 10px auto 10px auto;
+    }
+    #storeDescription{
+        width: 750px;
+        height: 7em;
+        margin: 16vw 0 0 0;
+        font-size: 1em;
+        height: 10em;
+    }
+#pageheader {
+    height: 15vw;
+}
+    #pageheader h1{
+        font-size: 4.5vw;
+    }
+    section {
+        width: 760px;
+        margin: 0 auto 0 auto;
+    }
+    .bundleheader{
+        width: 750px;
+    }
+    nav {
+        font-size: 3vw;
+    }
+    #search {
+height: 3vw;
+    }
+}
+
+@media only screen and (max-width:320px) {
+    /* For mobile phones: */
+
+    #bundles1{
+        width: 240px;
+        margin: 10px auto 10px auto;
+    }
+    #bundles2{
+        width: 240px;
+        margin: 10px auto 10px auto;
+    }
+    #storeDescription{
+        width: 240px;
+        height:14.5em;
+        font-size: .5em;
+        margin: 7em auto 0 auto;
+        padding: 1em 0 0 0;
+    }
+#pageheader {
+    height: 3.5em;
+}
+    #pageheader h1{
+        font-size: 1em;
+    }
+    section {
+        width: 240px;
+        margin: 0 auto 0 auto;
+    }
+    .bundleheader{
+        height: 6em;
+        width: 240px;
+    }
+    
+    .custom-select{
+        margin: 1em 1.5em 0 0;
+    }
+    nav {
+        font-size: .75em;
+        margin: 0;
+    }
+    #search {
+    height: 1em;
+    }
+}
